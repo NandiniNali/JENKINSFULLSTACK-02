@@ -1,0 +1,180 @@
+/* 💫 Base Layout */
+body {
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(145deg, #fdfbfb, #ebedee);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #444;
+  min-height: 100vh;
+}
+
+/* 🎬 App Container */
+.movie-container {
+  background: #ffffff;
+  width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 📌 Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 10;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #f5c6d6;
+}
+
+/* 🌸 Title */
+.movie-container h2 {
+  font-weight: 700;
+  font-style: italic;
+  color: #ff7b9c;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* 🎀 Form Section */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-grid input {
+  border: 1.5px solid #ffd6e0;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #fff8fa;
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+
+.form-grid input:focus {
+  outline: none;
+  border-color: #ff9bb3;
+  background: #fff;
+  box-shadow: 0 0 5px #ffd6e0;
+}
+
+select {
+  border: 1.5px solid #ffd6e0;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #fff8fa;
+  font-size: 14px;
+}
+
+/* ✨ Buttons */
+.btn-group {
+  margin-top: 15px;
+}
+
+button {
+  background: #ffb6c1;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 5px;
+  font-style: italic;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ff87a0;
+  box-shadow: 0 3px 6px rgba(255, 135, 160, 0.3);
+}
+
+/* 🎞️ Movie List */
+.table-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  max-height: 230px;
+  overflow-y: auto;
+  border-radius: 12px;
+  border: 1px solid #ffd6e0;
+  background: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #ffe3ea;
+}
+
+th {
+  background: #ffe9f0;
+  color: #ff7b9c;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background: #fff6f8;
+}
+
+/* 🩵 Message Banner */
+.message-banner {
+  background: #fff0f4;
+  color: #ff7b9c;
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(255, 182, 193, 0.2);
+}
+
+/* 💖 Action Buttons */
+.action-buttons button {
+  margin: 0 4px;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.btn-green {
+  background: #a5d6a7;
+  color: #2e7d32;
+}
+
+.btn-red {
+  background: #f8b7b7;
+  color: #b71c1c;
+}
+
+.btn-green:hover {
+  background: #81c784;
+}
+
+.btn-red:hover {
+  background: #ef9a9a;
+}
+
+/* 🌼 Custom Scrollbar for Table */
+.table-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ffc1d3;
+  border-radius: 10px;
+}
