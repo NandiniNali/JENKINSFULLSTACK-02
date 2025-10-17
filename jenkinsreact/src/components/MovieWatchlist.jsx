@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style.css';
 import config from './config.js';
-
 const MovieWatchlist = () => {
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState({
